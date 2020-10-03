@@ -4,22 +4,58 @@
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<title>Banking System</title>
-	<link rel="stylesheet" type="text/css" href="css/styles.css">
 	<link rel="icon"  href="favicon.ico">
+	<style>
+	body{
+	background-color: #666699;
+	margin: 0;
+	padding: left: 0;
+
+}
+h1{
+	color: #ff8080;
+	text-align: center;
+	font-family: 'Sacramento', cursive;
+}
+h1:hover{
+	color: white;
+}
+h2:hover{
+	color: white;
+}
+h2{
+	color: #66c2ff;
+}
+input[type=submit]{
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-decoration: none;
+  margin: 4px 2px;
+  cursor: pointer;
+  }
+	</style>
 </head>
-<body>	
+<body bgcolor=#b3ffb3>	
 	<h1>Bank Search Application</h1>
 	<hr>
-	<h3>Welcome to banking search page</h3>
-	<div class="search_box"></div>
 	<form method="post" action="https://vast-shore-74260.herokuapp.com/banks?city=MUMBAI" align="center">
+	<fieldset>
+	<legend><h2>Welcome to banking search page</h2></legend>
+	<br>
+	<div class="search_box"></div>
 	<select name="bank_id">
 		<option value="">---------Please select your options---------</option>
 		<option value="mumbai">MUMBAI</a></option>
 		<option value="bangalore">Bangalore</option>
 		<option value="chennai">Chennai</option>
 	</select>
+	<br>
+	<br>
 	 <input type="Submit" name="Submit" value="Submit">
+
+	 </fieldset>
 	 </form> 
 	<script type="text/javascript" href="index.js"></script>
 </body>
